@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <!-- Replace YOUR_API_KEY with an actual Google Maps API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Travel Planner</h1>
+        </header>
+        <main>
+            <div id="map"></div>
+            <div class="controls">
+                <input id="search-box" type="text" placeholder="Search for places...">
+                <button id="plan-trip">Plan Trip</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
