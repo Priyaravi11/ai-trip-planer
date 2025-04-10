@@ -18,9 +18,9 @@ def generate_itinerary(data):
 
 if __name__ == "__main__":
     test_data = {
-        "destination": "Paris",
+        "destination": "chennai",
         "days": 3,
-        "interests": "art, culture, history"
+        "interests": "games, cinema"
     }
 
     print("\nGenerated Itinerary:\n")
