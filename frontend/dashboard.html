@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - AI Travel Planner</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="dashboard">
+  <nav class="navbar">
+    <h1>AI Travel Planner</h1>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <main class="planner-section">
+    <h2>Customize Your Travel Plan</h2>
+    <form id="travelForm">
+      <input type="text" placeholder="Destination" required />
+      <input type="date" placeholder="Start Date" required />
+      <input type="date" placeholder="End Date" required />
+      <select required>
+        <option value="">Select Budget</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">Luxury</option>
+      </select>
+      <textarea placeholder="Any Preferences (Food, Places, Interests)..."></textarea>
+      <button type="submit">Generate Plan</button>
+    </form>
+
+    <div id="planResults">
+      <!-- AI results will be injected here -->
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

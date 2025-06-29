@@ -1,64 +1,94 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-header {
-    background-color: #4285F4;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #f4f4f9;
+    color: #333;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, #0077ff, #00d4ff);
     color: white;
-    padding: 1rem;
     text-align: center;
-}
-
-main {
-    flex: 1;
+    padding: 100px 20px;
+  }
+  
+  .hero .btn {
+    background: white;
+    color: #0077ff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .features {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .feature-grid {
     display: flex;
-    flex-direction: column;
-}
-
-#map {
-    flex: 1;
-    height: 70vh;
-}
-
-.controls {
-    padding: 1rem;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    width: 250px;
+    background: #f0faff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .login-body, .dashboard {
     display: flex;
-    gap: 1rem;
-    background-color: #f1f1f1;
-}
-
-#search-box {
-    flex: 1;
-    padding: 0.5rem;
-    font-size: 1rem;
-}
-
-#plan-trip {
-    padding: 0.5rem 1rem;
-    background-color: #4285F4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #e0f7fa;
+  }
+  
+  .login-container, .planner-section {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  input, textarea, select, button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  button {
+    background: #0077ff;
     color: white;
-    border: none;
-    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 1rem;
-}
-
-#plan-trip:hover {
-    background-color: #3367D6;
-}
-
-@media (max-width: 600px) {
-    .controls {
-        flex-direction: column;
-    }
-}
+  }
+  
+  .navbar {
+    background: #0077ff;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  

@@ -20,8 +20,9 @@ if __name__ == "__main__":
     test_data = {
         "destination": "chennai",
         "days": 3,
-        "interests": "games, cinema"
+        "interests": ",history,temples, cinema"
     }
 
     print("\nGenerated Itinerary:\n")
     print(generate_itinerary(test_data))
+    

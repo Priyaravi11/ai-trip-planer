@@ -52,3 +52,6 @@ def get_user_history():
     email = request.args.get('email')
     history = get_history_by_user(email)
     return jsonify({"history": history})
+@routes_bp.route('/', methods=['GET'])
+def index():
+    return 'Welcome to the Travel Planner API!'

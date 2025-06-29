@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Planner</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-    <!-- Replace YOUR_API_KEY with an actual Google Maps API key -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap" async defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Travel Planner</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Travel Planner</h1>
-        </header>
-        <main>
-            <div id="map"></div>
-            <div class="controls">
-                <input id="search-box" type="text" placeholder="Search for places...">
-                <button id="plan-trip">Plan Trip</button>
-            </div>
-        </main>
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Plan Your Dream Trip with AI</h1>
+      <p>Let our intelligent assistant craft the perfect travel itinerary just for you.</p>
+      <a href="login.html" class="btn">Get Started</a>
     </div>
+  </header>
+
+  <section class="features">
+    <h2>Why Use Our AI Travel Planner?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="assets/ai.svg" alt="AI Planning">
+        <h3>Smart Planning</h3>
+        <p>AI tailors your itinerary based on preferences, weather, and more.</p>
+      </div>
+      <div class="feature-card">
+        <img src="assets/location.svg" alt="Destinations">
+        <h3>Handpicked Destinations</h3>
+        <p>Explore the best places, hidden gems, and cultural hotspots.</p>
+      </div>
+      <div class="feature-card">
+        <img src="assets/saving.svg" alt="Budget Friendly">
+        <h3>Budget-Friendly</h3>
+        <p>Optimize your trip cost with smart suggestions.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 AI Travel Planner. All rights reserved.</p>
+  </footer>
 </body>
 </html>
